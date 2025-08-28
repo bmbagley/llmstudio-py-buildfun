@@ -1,0 +1,16 @@
+{
+  "_checkout": "2025.08.12",
+  "_output_dir": "/Users/brandonbagley/repos",
+  "_repo_dir": "/Users/brandonbagley/.cookiecutters/cookiecutter-uv-hypermodern-python",
+  "_template": "gh:bosd/cookiecutter-uv-hypermodern-python",
+  "author": "bmbagley",
+  "copyright_year": "2025",
+  "development_status": "Development Status :: 3 - Alpha",
+  "email": "bmbagley@gmail.com",
+  "friendly_name": "Llmstudio Py Buildfun",
+  "github_user": "bmbagley",
+  "license": "MIT",
+  "package_name": "llmstudio_py_buildfun",
+  "project_name": "llmstudio-py-buildfun",
+  "version": "0.0.0"
+}
