@@ -55,7 +55,8 @@ def parse_llm_out(response):
     return response.choices[0].message.content
 
 
-def return_downloaded_model(model_type='llm') -> list[lms.AnyDownloadedModel]:
+validmodels  = ['llm', 'embedding']
+def return_downloaded_model(model_type:str ='llm') -> list[lms.AnyDownloadedModel]:
     """Generate list of models downloaded in lmstudio.
 
     Args:
@@ -64,6 +65,8 @@ def return_downloaded_model(model_type='llm') -> list[lms.AnyDownloadedModel]:
     Returns: list of lmstudio models
 
     """
+    if model_type not in validmodels:
+        raise ValueError(f"Invalid model type input: {model_type}\nPlease choose value from the following {validmodels}")
     dld = lms.list_downloaded_models(namespace=model_type)
     return dld
 
