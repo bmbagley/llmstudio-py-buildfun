@@ -3,7 +3,7 @@ name = "llmstudio-py-buildfun"
 version = "0.0.0"
 description = "Llmstudio Py Buildfun"
 readme = "README.md"
-requires-python = ">=3.9"
+requires-python = ">=3.12"
 license = {text = "MIT"}
 authors = [
   {name = "bmbagley", email = "bmbagley@gmail.com"},
@@ -14,6 +14,7 @@ classifiers = [
 
 dependencies = [
     "click >=8.0.1",
+    "lmstudio>=1.5.0",
     "nox",
     "openai>=1.102.0",
 ]
