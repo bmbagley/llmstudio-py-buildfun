@@ -14,13 +14,6 @@ client = OpenAI(
     base_url="http://localhost:1234/v1",
     api_key="lm-studio"  # Dummy key
 )
-# response = client.chat.completions.create(
-#     model="gemma-3-4b-it-qat",
-#     messages=[
-#         {"role": "user", "content": "Tell me a fun fact about space."}
-#     ]
-# )
-# print(response.choices[0].message.content)
 
 
 if __name__ == "__main__":
@@ -32,6 +25,7 @@ if __name__ == "__main__":
     # Call specified model with user input
     request_in = LlmInput(model_name=str(model_select), role="user", \
                           content=str(user_input))
+
     # Return response text only
     response = llm_request(client, request_in)
     print(parse_llm_out(response))
