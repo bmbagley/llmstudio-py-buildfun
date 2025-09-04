@@ -15,8 +15,10 @@ classifiers = [
 dependencies = [
     "click >=8.0.1",
     "lmstudio>=1.5.0",
+    "markdown>=3.8.2",
     "nox",
     "openai>=1.102.0",
+    "pymongo>=4.14.1",
 ]
 
 

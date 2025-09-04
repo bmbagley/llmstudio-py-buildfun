@@ -1,0 +1,10 @@
+{
+  "mongodb": {
+    "uri": "mongodb://localhost:27017/llm_db",
+    "db_name": "llm_db"
+  },
+  "lmstudio": {
+    "uri": "lmstudio://http://127.0.0.1:1234",
+    "model_default": "liquid/lfm2-1.2b"
+  }
+}
